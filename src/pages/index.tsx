@@ -1,8 +1,9 @@
 import type { NextPage } from 'next';
 import { useEffect, useState } from 'react';
+import { Villager } from '../types/types';
 import styles from '../styles/Home.module.css';
 import GetApiData from '../service/fetch';
-import { Villager } from '../types/types';
+import VillagersList from '../components/VillagersList';
 
 const Home: NextPage = () => {
   const [villagers, setVillagers] = useState<Villager[]>([]);
@@ -13,7 +14,11 @@ const Home: NextPage = () => {
       setVillagers(dataApi);
     });
   }, []);
-  return <h1>hola mundo</h1>;
+  return (
+    <h1>
+      <VillagersList villagers={villagers} />
+    </h1>
+  );
 };
 
 export default Home;
