@@ -14,6 +14,7 @@ const VillagerItem = (props: VillageritemProps) => {
           alt="foto camiseta"
         />
         <p>{props.villager.name}</p>
+        <p>{props.villager.species}</p>
         <button type="button">Añadir</button>
       </div>
     </div>
