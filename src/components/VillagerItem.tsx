@@ -1,4 +1,5 @@
 import { Villager } from '../types/types';
+import Image from 'next/image';
 interface VillageritemProps {
   villager: Villager;
 }
@@ -6,17 +7,14 @@ const VillagerItem = (props: VillageritemProps) => {
   return (
     <div>
       <div>
-        <img
-          className="TshirtItem__container-item__image"
+        <Image
+          width={200}
+          height={200}
           src={props.villager.photo}
           alt="foto camiseta"
         />
-        <p className="TshirtItem__container-item__name">
-          {props.villager.name}
-        </p>
-        <button type="button" className="TshirtItem__container-item__add">
-          Añadir
-        </button>
+        <p>{props.villager.name}</p>
+        <button type="button">Añadir</button>
       </div>
     </div>
   );
