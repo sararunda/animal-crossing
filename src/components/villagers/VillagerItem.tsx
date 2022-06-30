@@ -1,4 +1,4 @@
-import { Villager } from '../types/types';
+import { Villager } from '../../types/types';
 import Image from 'next/image';
 interface VillageritemProps {
   villager: Villager;
