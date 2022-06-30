@@ -2,8 +2,9 @@ import type { NextPage } from 'next';
 import styles from './home.module.scss';
 import Image from 'next/image';
 import AcPic from '../../public/ac.png';
-import Villagers from '../../public/fossil.jpg';
-import Fossil from '../../public/minina.gif';
+import Villagers from '../../public/minina.gif';
+import Fossil from '../../public/fossil.jpg';
+import Butterfly from '../../public/butterfly.png';
 import Link from 'next/link';
 const Home: NextPage = () => {
   return (
@@ -14,25 +15,22 @@ const Home: NextPage = () => {
         </div>
       </header>
       <main className={styles.main}>
-        <a href="">
-          <Link href="./villagers/">
-            <div className={styles.minina}>
-              <Image
-                src={Fossil}
-                width={0}
-                height={0}
-                alt="Fossil photo"
-              ></Image>
-              <Image
-                src={Villagers}
-                width={0}
-                height={0}
-                alt="Minina photo"
-              ></Image>
-              <p>Villagers</p>
-            </div>
-          </Link>
-        </a>
+        <Link href="">
+          <div>
+            <Image src={Butterfly} width={0} height={0} alt=""></Image>
+          </div>
+        </Link>
+        <Link href="">
+          <Image src={Fossil} width={0} height={0} alt="Fossil photo"></Image>
+        </Link>
+        <Link href="./villagers/">
+          <Image
+            src={Villagers}
+            width={0}
+            height={0}
+            alt="Villagers photo"
+          ></Image>
+        </Link>
       </main>
       <footer>hola</footer>
     </>
