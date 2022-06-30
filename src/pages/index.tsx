@@ -2,7 +2,8 @@ import type { NextPage } from 'next';
 import styles from './home.module.scss';
 import Image from 'next/image';
 import AcPic from '../../public/ac.png';
-import Minina from '../../public/minina.gif';
+import Villagers from '../../public/fossil.jpg';
+import Fossil from '../../public/minina.gif';
 import Link from 'next/link';
 const Home: NextPage = () => {
   return (
@@ -17,7 +18,13 @@ const Home: NextPage = () => {
           <Link href="./villagers/">
             <div className={styles.minina}>
               <Image
-                src={Minina}
+                src={Fossil}
+                width={0}
+                height={0}
+                alt="Fossil photo"
+              ></Image>
+              <Image
+                src={Villagers}
                 width={0}
                 height={0}
                 alt="Minina photo"
