@@ -22,7 +22,7 @@ const Home: NextPage = () => {
       </header>
       <main className={styles.main}>
         <Link href="./villagers/">
-          <div>
+          <div className={styles.photoMinina}>
             <Image
               src={Villagers}
               width={0}
@@ -33,19 +33,19 @@ const Home: NextPage = () => {
           </div>
         </Link>
         <Link href="">
-          <div>
+          <div className={styles.photoHome}>
             <Image src={Fossil} width={0} height={0} alt="Fossil photo"></Image>
             <p>Fossils</p>
           </div>
         </Link>
         <Link href="">
-          <div>
+          <div className={styles.photoHome}>
             <Image src={Insect} width={0} height={0} alt="Insect photo"></Image>
             <p>Insects</p>
           </div>
         </Link>
         <Link href="">
-          <div>
+          <div className={styles.photoHome}>
             <Image src={Fish} width={0} height={0} alt="Fish photo"></Image>
             <p>Fish</p>
           </div>
