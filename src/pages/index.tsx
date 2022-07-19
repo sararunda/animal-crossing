@@ -51,7 +51,9 @@ const Home: NextPage = () => {
           </div>
         </Link>
       </main>
-      <footer>hola</footer>
+      <footer className={styles.footer}>
+        <p>Sara Ferández Ramos</p>
+      </footer>
     </>
   );
 };
