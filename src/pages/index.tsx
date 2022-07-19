@@ -12,13 +12,23 @@ const Home: NextPage = () => {
     <>
       <header className={styles.header}>
         <div className={styles.logo}>
-          <Image width={0} height={0} src={AcPic} alt="foto camiseta"></Image>
+          <Image
+            width={0}
+            height={0}
+            src={AcPic}
+            alt="animal crossing photo"
+          ></Image>
         </div>
       </header>
       <main className={styles.main}>
         <Link href="./villagers/">
           <div>
-            <Image src={Villagers} width={0} height={0} alt=""></Image>
+            <Image
+              src={Villagers}
+              width={0}
+              height={0}
+              alt="villager photo"
+            ></Image>
             <p>Villagers</p>
           </div>
         </Link>
@@ -30,18 +40,13 @@ const Home: NextPage = () => {
         </Link>
         <Link href="">
           <div>
-            <Image
-              src={Insect}
-              width={0}
-              height={0}
-              alt="Villagers photo"
-            ></Image>
+            <Image src={Insect} width={0} height={0} alt="Insect photo"></Image>
             <p>Insects</p>
           </div>
         </Link>
         <Link href="">
           <div>
-            <Image src={Fish} width={0} height={0} alt="Fossil photo"></Image>
+            <Image src={Fish} width={0} height={0} alt="Fish photo"></Image>
             <p>Fish</p>
           </div>
         </Link>
