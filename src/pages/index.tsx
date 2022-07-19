@@ -29,30 +29,30 @@ const Home: NextPage = () => {
               height={0}
               alt="villager photo"
             ></Image>
-            <p>Villagers</p>
+            <p className={styles.name_item}>Villagers</p>
           </div>
         </Link>
         <Link href="">
           <div className={styles.photoHome}>
             <Image src={Fossil} width={0} height={0} alt="Fossil photo"></Image>
-            <p>Fossils</p>
+            <p className={styles.name_item}>Fossils</p>
           </div>
         </Link>
         <Link href="">
           <div className={styles.photoHome}>
             <Image src={Insect} width={0} height={0} alt="Insect photo"></Image>
-            <p>Insects</p>
+            <p className={styles.name_item}>Insects</p>
           </div>
         </Link>
         <Link href="">
           <div className={styles.photoHome}>
             <Image src={Fish} width={0} height={0} alt="Fish photo"></Image>
-            <p>Fish</p>
+            <p className={styles.name_item}>Fish</p>
           </div>
         </Link>
       </main>
       <footer className={styles.footer}>
-        <p>Sara Ferández Ramos</p>
+        <p>Sara Ferández Ramos ©</p>
       </footer>
     </>
   );
