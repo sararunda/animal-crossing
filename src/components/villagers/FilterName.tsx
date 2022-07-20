@@ -2,7 +2,7 @@ interface FilterNameProps {
   handleChangeFilterName(filterVillagerValue: string): void;
 }
 const FilterName = (props: FilterNameProps) => {
-  const handleChangeInput = (event) => {
+  const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     const filterVillagerValue = event.target.value as string; //casting to string
     props.handleChangeFilterName(filterVillagerValue);
   };
