@@ -32,7 +32,7 @@ const Home: NextPage = () => {
             <p className={styles.name_item}>Villagers</p>
           </div>
         </Link>
-        <Link href="">
+        <Link href="./fossils/">
           <div className={styles.photoHome}>
             <Image src={Fossil} width={0} height={0} alt="Fossil photo"></Image>
             <p className={styles.name_item}>Fossils</p>
