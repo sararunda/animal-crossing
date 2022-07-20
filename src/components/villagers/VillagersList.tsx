@@ -8,7 +8,7 @@ const VillagersList = (props: VillagersListProps) => {
   const renderList = () => {
     return props.villagers
       .filter((item) => {
-        item.name.toLowerCase().includes(props.filterName.toLowerCase());
+        return item.name.toLowerCase().includes(props.filterName.toLowerCase());
       })
       .map((item, index) => {
         return (
