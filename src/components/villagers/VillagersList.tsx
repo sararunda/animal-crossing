@@ -2,16 +2,21 @@ import VillagerItem from './VillagerItem';
 import { Villager } from '../../types/types';
 interface VillagersListProps {
   villagers: Villager[];
+  filterName: string;
 }
 const VillagersList = (props: VillagersListProps) => {
   const renderList = () => {
-    return props.villagers.map((item, index) => {
-      return (
-        <li key={index}>
-          <VillagerItem key={index} villager={item} />
-        </li>
-      );
-    });
+    return props.villagers
+      .filter((item) => {
+        item.name.toLowerCase().includes(props.filterName.toLowerCase());
+      })
+      .map((item, index) => {
+        return (
+          <li key={index}>
+            <VillagerItem key={index} villager={item} />
+          </li>
+        );
+      });
   };
 
   return renderList().length > 0 ? (

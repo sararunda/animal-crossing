@@ -24,7 +24,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Filters handleChangeFilterName={handleChangeFilterName} />
-      <VillagersList villagers={villagers} />
+      <VillagersList filterName={filterName} villagers={villagers} />
     </>
   );
 };
