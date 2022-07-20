@@ -19,10 +19,10 @@ const Home: NextPage = () => {
     });
   }, []);
   return (
-    <h1>
+    <>
       <Filters />
       <VillagersList villagers={villagers} />
-    </h1>
+    </>
   );
 };
 
