@@ -1,5 +1,5 @@
 .header {
-  background-color: #76ba99;
+  background-image: url('../../public/fondo.jpg');
 }
 .logo {
   width: 350px;
@@ -9,6 +9,7 @@
 }
 .main {
   background-color: #fcf8e8;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,8 +34,7 @@
     color: #ecb390;
   }
 }
-
 .footer {
-  background-color: #ecb390;
+  background-image: url(../../public/footer.jpg);
   padding: 50px 0 50px 20px;
 }
