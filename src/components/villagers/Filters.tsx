@@ -1,9 +1,12 @@
+import { prependOnceListener } from 'process';
 import FilterName from './FilterName';
-
-const Filters = () => {
+interface FiltersProps {
+  handleChangeFilterName(filterVillagerValue: string): void;
+}
+const Filters = (props: FiltersProps) => {
   return (
     <form action="">
-      <FilterName />
+      <FilterName handleChangeFilterName={props.handleChangeFilterName} />
     </form>
   );
 };

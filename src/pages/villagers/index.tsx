@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import { useEffect, useState } from 'react';
 import { Villager } from '../../types/types';
-import styles from '../styles/Home.module.css';
 import GetApiData from '../../service/fetch';
 import Filters from '../../components/villagers/Filters';
 import VillagersList from '../../components/villagers/VillagersList';
@@ -18,9 +17,13 @@ const Home: NextPage = () => {
       setVillagers(dataApi);
     });
   }, []);
+  //handling functions
+  const handleChangeFilterName = (filterVillagerValue: string) => {
+    setFilterName(filterVillagerValue);
+  };
   return (
     <>
-      <Filters />
+      <Filters handleChangeFilterName={handleChangeFilterName} />
       <VillagersList villagers={villagers} />
     </>
   );

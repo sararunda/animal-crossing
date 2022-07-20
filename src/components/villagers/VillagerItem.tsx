@@ -15,7 +15,7 @@ const VillagerItem = (props: VillageritemProps) => {
         />
         <p>{props.villager.name}</p>
         <p>{props.villager.species}</p>
-        <button type="button">Añadir</button>
+        <button type="button">+ info</button>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import VillagerItem from './VillagerItem';
-import { Villager } from '../types/types';
+import { Villager } from '../../types/types';
 interface VillagersListProps {
   villagers: Villager[];
 }
