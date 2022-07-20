@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import { useEffect, useState } from 'react';
 import { Villager } from '../../types/types';
-import GetApiData from '../../service/fetch';
+import GetApiData from '../../service/fetchVillagers';
 import Filters from '../../components/villagers/Filters';
 import VillagersList from '../../components/villagers/VillagersList';
 interface HomePageProps {
